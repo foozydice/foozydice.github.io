@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link href="assets/apple-icon-180x180.png" rel="apple-touch-icon">
+  <link href="assets/favicon.ico" rel="icon">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <title>the fuzzy family</title>
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+  <style>
+    body {
+      line-height: 1.6;
+    }
+
+    .bio-container {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .banner {
+      flex-shrink: 0;
+    }
+
+    #biopics {
+      max-width: 200px;
+      height: auto;
+      display: block;
+    }
+
+    .bio-text {
+      flex: 1;
+      margin: auto 0;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    h5 {
+      margin: 5px 0 15px 0;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .bio-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      #biopics {
+        max-width: 100%;
+        width: 200px;
+        margin: 0 auto;
+      }
+
+      .bio-text {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body style="width: 100%;">
+
+  <!--css spinner-->
+  <!--<div class="spinner-wrapper">
+  <div class="spinner"></div>
+</div>-->
+
+  <!-- BEGIN HEADER (repeated on every page, must include jQuery & bootstrap to work) -->
+  <header class="">
+    <div class="navbar navbar-header navbar-default visible-xs">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="./index.html" class="navbar-brand">fuzzy dice</a>
+    </div>
+    <nav class="navbar navbar-inverse visible-xs">
+      <div class="collapse navbar-collapse" id="myNavbar" style="background-color: #f46cc4;">
+        <ul class="nav navbar-nav" style="padding: 0 5%;">
+          <li><a href="/" title="">
+              <font face="PT Sans" size="+0.8" style="color: white;">home</font>
+            </a></li>
+          <li><a href="./fuzzyfamily.html" title="">
+              <font face="PT Sans" size="+0.8" style="color: rgb(252, 224, 239)">&rarr; the fuzzy family &larr;</font>
+            </a></li>
+          <li><a href="./ourcreationmyth.html" title="">
+              <font face="PT Sans" size="+0.8" style="color: white;">our creation myth</font>
+            </a></li>
+          <li><a href="./shows.html" title="">
+              <font face="PT Sans" size="+0.8" style="color: white;">shows</font>
+            </a></li>
+          <li><a href="./auditions.html" title="">
+              <font face="PT Sans" size="+0.8" style="color: white;">auditions</font>
+            </a></li>
+<li><a href="./important.html" title="">
+              <font face="PT Sans" size="+0.8" style="color: white;">improv simulator</font>
+            </a></li>
+        </ul>
+
+      </div>
+      <!-- </div> -->
+    </nav>
+
+    <nav class="sidebar hidden-xs">
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <div class="site-header hidden-xs">
+          <a class="site-brand" href="./index.html" title="">
+            <img class="img-responsive site-logo" alt="" src="./assets/images/FuzzyDiceLogo2.png">
+            <font size="+3.9">
+              <center>fuzzy dice
+            </font>
+          </a>
+          <p>roll with us!</p>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav">
+            <li><a href="./index.html" title="">
+                <font face="PT Sans" size="+0.8">home</font>
+              </a></li>
+            <li><a href="./fuzzyfamily.html" title="">
+                <font face="PT Sans" size="+0.8">the fuzzy family</font>
+              </a></li>
+            <li><a href="./ourcreationmyth.html" title="">
+                <font face="PT Sans" size="+0.8">our creation myth</font>
+              </a></li>
+            <li><a href="./shows.html" title="">
+                <font face="PT Sans" size="+0.8">shows</font>
+              </a></li>
+            <li><a href="./auditions.html" title="">
+                <font face="PT Sans" size="+0.8">auditions</font>
+              </a></li>
+<li><a href="./important.html" title="">
+                <font face="PT Sans" size="+0.8">improv simulator</font>
+              </a></li>
+<li><a href="/secret/" title="">
+                <font face="PT Sans" size="+0.8">(secret) fuzzy game</font>
+              </a></li>
+
+
+          </ul>
+
+          <!-- footer + social buttons -->
+          <nav class="nav-footer hidden-xs">
+            <p class="nav-footer-social-buttons">
+              <a class="fa-icon" href="https://www.facebook.com/FuzzyDiceImprov/" title="">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a class="fa-icon" href="mailto:chloeds@princeton.edu" title="">
+                <i class="fa fa-envelope-o"></i>
+              </a>
+              <a class="fa-icon" href="https://www.youtube.com/channel/UCBOqNjECXxtZ2rY9BPJEZLw" title="">
+                <i class="fa fa-youtube-play"></i>
+              </a>
+              <a class="fa-icon" href="https://www.instagram.com/foozydice/" title="">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </p>
+            <p>© fuzzy dice
+              <script>document.write((new Date()).getFullYear())</script>
+            </p>
+          </nav>
+        </div>
+    </nav>
+  </header>
+  <!-- END HEADER (repeated on every page) -->
+
+  <main id="main-content" style="min-width: 50%; max-width: 800px; margin: 0 auto;">
+    <div>
+      <h1>
+        <center>the fuzzy family</center>
+      </h1>
+      <hr>
+
+      <img class="img-responsive" id="framedfuzzies" alt="" src="./assets/images/2021Pics/framedfuzziesyuh.jpg">
+      <p>
+        <center>
+          <font size="+0.8">Fuzzy Dice, Princeton's (Self-Proclaimed) Most Attractive Improv Group, was founded in
+            2004 as the first troupe on campus to offer both long- and short-form improv comedy. Since then, we have
+            performed at campuses and theaters across the US. Fuzzy Dice is both an improv
+            group and a family, which makes it that much easier for us to enjoy doing what we love.</font>
+      </p>
+      <a href="auditions.html" class="btn btn-primary" title="">let us adopt you!</strong></a>
+      <br>
+    </div>
+
+    <br></br>
+
+    <section>
+
+      <div class="row">
+        <div>
+          <h5>
+            <center>
+              <font size="+2.5">~ CURRENT MEMBERS ~</font>
+          </h5>
+
+          <hr>
+          <div class="bio-container">
+            <div class="banner">
+              <img class="img-responsive" id="biopics" alt="" src="./assets/images/headshots/fuzzyshivani.jpeg">
+            </div>
+            <div class="bio-text">
+              <h3>
+                <font size="+2">Shivani Sahu</font>
+              </h3>
+              <h5><em>Artistic Director, Class of 2027</em></h5>
+              <p>Shivani Sahu is a four-time EGOT winner/SoundCloud rapper from super super duper duper duper far away
+                in New Jersey. But like really far New Jersey. Like. Super. Far. She initially joined Fuzzy Dice to
+                distract from the fact that she is actually two kids in a trench coat. On a good day, she is 5'2", but
+                on a really good day she is 7'6". This is when she is three kids in a trench coat. When she is not
+                making a pained expression while eating waffles messily, she is actively recruiting the fourth kid in a
+                trench coat. Applications currently being accepted. Thank you in advance.</p>
+            </div>
+          </div>
+
+          <div class="bio-container">
+            <div class="banner">
+              <img class="img-responsive" id="biopics" alt="" src="./assets/images/headshots/fuzzydane.JPG">
+            </div>
+            <div class="bio-text">
+              <h3>
+                <font size="+2">Dane Utley</font>
+              </h3>
+              <h5><em>Executive Director, Class of 2026</em></h5>
+              <p>Dane will tell you he is from Los Angeles because it makes him feel unlike other girls, but any
+                rational person from LA will tell you that he is not. If not fulfilling every California stereotype, you
+                will often find him spontaneously dancing to nothing in particular or attempting to bring back the
+                mid-Atlantic accent and infuse the word "innit" into American English. If you quote any lines from
+                Pixar's <i>Up</i> or NBC's <i>Community</i>, he is contractually obligated to love you unconditionally
+                forever.</p>
+            </div>
+          </div>
+
+          <div class="bio-container">
+            <div class="banner">
+              <img class="img-responsive" id="biopics" alt="" src="./assets/images/headshots/fuzzytyler.JPG">
+            </div>
+            <div class="bio-text">
+              <h3>
+                <font size="+2">Tyler Wilson</font>
+              </h3>
+              <h5><em>Publicity Chair &amp; Alumni Coordinator, Class of 2026</em></h5>
+              <p>Tyler Wilson comes to us from glistening Connecticut. His favorite pastimes are romanticizing his life,
+                giving unsolicited advice, and being naturally funny. He loves movies but never watches them, likes
+                exercise but cannot bring himself to it, and despises Twitter but is alsways on it. He has a
+                deeply-rooted fear of crustaceans unless they're cooked. When asked how he stays so positve, he answers,
+                "denial."</p>
+            </div>
+          </div>
+
+          <div class="bio-container">
+            <div class="banner">
+              <img class="img-responsive" id="biopics" alt="" src="./assets/images/headshots/fuzzyelijah3.jpg">
+            </div>
+            <div class="bio-text">
+              <h3>
+                <font size="+2">Elijah Patterson</font>
+              </h3>
+              <h5><em>Treasurer &amp; Web Ghoul, Class of 2027</em></h5>
+              <p>An accident from London, Christian before it was cool, wannabe film-bro, acutely forosophobic and
+                passionate BATISCOAF (Brits Against The Insane Saline Content Of American Food) campaigner, Elijah
+                Jeshurun Patterson, also known as <b>guttural grunt noise</b> to his friends, has a severe case of RDF
+                (resting depressed face: if anyone has a cure please help him). If you have lost your Elijah, retrace
+                all the blank walls you may have passed while you were with him, as he is probably stuck staring at one
+                of them.</p>
+            </div>
+          </div>
+
+          <div class="bio-container">
+            <div class="banner">
+              <img class="img-responsive" id="biopics" alt="" src="./assets/images/headshots/fuzzyConnor.jpg">
+            </div>
+            <div class="bio-text">
+              <h3>
+                <font size="+2">Connor Roeser</font>
+              </h3>
+              <h5><em>Social Chair &amp; Secretariat, Class of 2028</em></h5>
+              <p>Found gleefully frolicing in the meadows of Fairport, NY, Connor Roeser has many things he likes to do,
+                including but not limited to: eating good food, not eating bad food, drinking lots of milk, shaking his
+                hand at the sky when something bad happens to him, quoting Pitch Perfect and Lego Batman, and being
+                super chill. When submerged underwater he can be found to unexplainably grow three quarters of an inch.
+              </p>
+            </div>
+          </div>
+
+          <div class="bio-container">
+            <div class="banner">
+              <img class="img-responsive" id="biopics" alt="" src="./assets/images/headshots/fuzzynina.jpg">
+            </div>
+            <div class="bio-text">
+              <h3>
+                <font size="+2">Nina Obidairo-Danielsen</font>
+              </h3>
+              <h5><em>NOOB, Class of 2029</em></h5>
+              <p>Nina Obidairo-Danielsen holds a phD in 'Tomfoolery and Shenanigans' with a focus in 'Faffing About' and
+                'Dillydallying'. After finally escaping the Scottish test tube in which they were bioengineered, they
+                ended up in the US through a comedy of increasingly unbelievable errors (see autobiography for full
+                story). They now live a humble life and can often be found daydreaming, perfecting new methods of
+                procrastinating and forgetting almost everything all the time. They can easily be identified by their
+                bright pink bicycle helmet, some form of tartan clothing or by loud mysterious crashing noises in the
+                distance that everyone should totally split up to go investigate.</p>
+            </div>
+          </div>
+
+          <div class="bio-container">
+            <div class="banner">
+              <img class="img-responsive" id="biopics" alt="" src="./assets/images/headshots/fuzzypizza.jpeg">
+            </div>
+            <div class="bio-text">
+              <h3>
+                <font size="+2">Jon York</font>
+              </h3>
+              <h5><em>NOOB, Class of 2028</em></h5>
+              <p>Though commonly known as JonPizza, he also will respond to John, Jawn, Jon, that guy in the corner.
+                Pizza is not his favorite food as he is not a cannibal. If he was stuck under 40 feet of snow like the
+                Donnor party he would eat pizza though or if he got hungry he would also eat a pizza. Okay, okay, he
+                would always be down to eat a pizza! Back in his home state which has the Pizza capital of the world
+                (New Haven) he ate 3 Zuppardi's pizzas in 1 hour and was carried in his chair like they do for Bar
+                Mitzvahs as a celebration which is why he is called JonPizza.</p>
+            </div>
+          </div>
+
+          <div class="bio-container">
+            <div class="banner">
+              <img class="img-responsive" id="biopics" alt="" src="./assets/images/headshots/fuzzystan.jpg">
+            </div>
+            <div class="bio-text">
+              <h3>
+                <font size="+2">Max Stanford</font>
+              </h3>
+              <h5><em>NOOB, Class of 2029</em></h5>
+              <p>
+                Stan is also in Fuzzy Dice! 
+              </p>
+              <p>
+                "Nothing beside remains. Round the decay <br>
+                Of that colossal Wreck, boundless and bare <br>
+                The lone and level sands stretch far away." - Percy Shelley, Ozymandias 
+              </p>
+            </div>
+          </div>
+
+          <div class="bio-container">
+            <div class="banner">
+              <img class="img-responsive" id="biopics" alt="" src="./assets/images/headshots/fuzzyreggie.jpg">
+            </div>
+            <div class="bio-text">
+              <h3>
+                <font size="+2">Maxwell Marcus</font>
+              </h3>
+              <h5><em>NOOB, Class of 2028</em></h5>
+              <p>The best Perry the Platypus flipper on either side of the Mississippi, hailing from the deep, blue seas
+                of Missouri, the doctor says that Maxwell Reggie Barmann Marcus is 6ft tall, so it must be true. He is
+                often found putting the wrong amount of milk in tea, and he can't sing or dance but does; rhythm be
+                damned. He knows when to use a semicolon, but unfortunately, he does not have a catch phrase.</p>
+            </div>
+          </div>
+
+          <hr>
+          <div class="bio-container">
+            <div class="banner1">
+              <img class="img-responsive" id="biopics" alt="" src="./assets/images/headshots/fuzzywho.jpg">
+            </div>
+            <div class="bio-text">
+              <h3>
+                <font size="+2">You?</font>
+              </h3>
+              <h5><em>Class of ????</em></h5>
+              <p>Put down that gosh darn computer and go audition for fuzzy dice, young whippersnapper.</p>
+              <a href="auditions.html" class="btn btn-primary" title="">listen to your elder!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <br></br>
+    </section>
+
+    <section>
+      <div class="row">
+        <div>
+          <h5>
+            <center>
+              <font size="+2.5">~ CURRANT MEMBERS ~</font>
+          </h5>
+
+          <hr>
+          <div class="bio-container">
+            <div class="banner1">
+              <img class="img-responsive" id="biopics" alt="" src="./assets/images/headshots/pinkchampagnecurrant.jpg">
+            </div>
+            <div class="bio-text">
+              <h3>
+                <font size="+2">Pink Champagne Currant</font>
+              </h3>
+              <h5><em>Ribus Ribrum, Class of 2021</em></h5>
+              <p>Primarily used for fruit production, this gorgeous plant is a compact, mounding, diciduous shrub that
+                grows 3-5' tall. Yum!</p>
+            </div>
+          </div>
+
+          <div class="bio-container">
+            <div class="banner">
+              <img class="img-responsive" id="biopics" alt="" src="./assets/images/headshots/blackcurrant.png">
+            </div>
+            <div class="bio-text">
+              <h3>
+                <font size="+2">Black Currant</font>
+              </h3>
+              <h5><em>Ribes Nigrum, Class of 2022</em></h5>
+              <p>Black currants, which grow excellently in sandy loams and forest soils, are known for their enticing
+                aroma and tart flavor. Perfect for jams and jellies!</p>
+            </div>
+          </div>
+
+          <div class="bio-container">
+            <div class="banner">
+              <img class="img-responsive" id="biopics" alt="" src="./assets/images/headshots/raisin.jpg">
+            </div>
+            <div class="bio-text">
+              <h3>
+                <font size="+2">Raisin</font>
+              </h3>
+              <h5><em>Unwelcome Presence, Class of Eww</em></h5>
+              <p>"Stop right there. You're not a currant at all- what do you think you're doing in the currant members
+                section of this website? You don't BELONG here. Get lost, you wrinkly old raisin, before I smack you so
+                hard you turn back into a GRAPE!"</p>
+            </div>
+          </div>
+
+          <br></br>
+    </section>
+
+    <section>
+      <div class="row">
+        <div>
+          <h5>
+            <center>
+              <font size="+2.5">~ OUR ALUMNI ~</font>
+            </center>
+          </h5>
+        </div>
+      </div>
+      <hr>
+      <br></br>
+      <h5>
+        <center> We love our alumni! If you're an alumnus/a email <a href="mailto:jehling@princeton.edu">John</a> to
+          make sure you're on our mailing list. </center>
+      </h5>
+      <br>
+
+      <p>
+        <b>2006:</b> David Kaplan*<br>
+        <b>2008:</b> Will Ellerbe*, George Lace*, Alex Limpaecher*, Mark Bur, Paul Cowgill, Whitney Mosery<br>
+        <b> 2009:</b> Ashley Alexander, Annie Haslam Colquitt<br>
+        <b> 2010:</b> Jessica Taylor <br>
+        <b> 2011:</b> Sam Borchard, Kaitlyn Hamilton, Will Martinez<br>
+        <b> 2012:</b> Louisa Ferguson, Laura Pedersen, Max Rosmarin, Taylor Stewart-Cannon, Eric Wang<br>
+        <b> 2013:</b> LindseyRose Aguero-Sinclair<br>
+        <b> 2014:</b> Nigel Brauser, Lauren Coleman, Sara Figel, Sam Payne, Quintin Sally, Dillon Sharp, Dan Steurer<br>
+        <b> 2015:</b> Kelsea Best, Evan Coles<br>
+        <b> 2016:</b> Angad Anand, Justin "Japes" Poser<br>
+        <b> 2017:</b> Paulina Orillac<br>
+        <b> 2018:</b> Paddy Boroughs, Jessica Quinter, Cat Sharp<br>
+        <b> 2019:</b> Cameron McKenzie, Raina Seyd, Shea Minter, MacLean Collins <br>
+        <b> 2020:</b> Jackson Artis (<i>Director of the Board</i>)<br>
+        <b> 2021:</b> Ben Bollinger, Lowell Hutchinson <br>
+        <b> 2022:</b> Owen Matthews, Jonathan Som<br>
+        <b> 2023:</b> Elias "Mayfig" Mosby<br>
+        <b> 2024:</b> John "Mungo" Ehling, Chloe "Mom" Satenberg<br>
+        <b> 2024:</b> Dana Corbo, Caitlin Durkin, Maxfield Evers, Jeffery Chen, Molly Lopkin<br>
+
+        <br></b>
+        <font size=2px>*(Founders!)</font>
+      </p>
+      </div>
+      </div>
+
+      <br><br>
+    </section>
+
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navbarToggleSidebar();
+      navActivePage();
+    });
+  </script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<div class="col-xs-12 col-md-4 section-container-spacer">
+  <img class="img-responsive" alt="" src="./assets/images/img-14.jpg">
+  <h3>NAME</h3>
+  <h5><em>Officer Title, Class of XXXX</em></h5>
+  <p>BIO</p>
+</div>
+<div></div>
+
+<li><button class="dropdown-btn">the fuzzy family
+  <a class="fa fa-caret-down"></a>
+  </button>
+    <ul><div class="dropdown-container">
+      <li><a href="./currentdice.html" title=""><font size="+0.7">current dice</font></a></li>
+      <li><a href="./ourcreationmyth.html" title=""><font size="+0.7">our creation myth</font></a></li>
+      <li><a href="./alumni.html" title-""><font size="+0.7">alumni</font></a></li>
+    </div></ul>
+
+-->
+  <script type="text/javascript" src="./main.85741bff.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      //Preloader
+      $(window).on("load", function () {
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+          var preloader = $('.spinner-wrapper');
+          preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+      });
+    });
+  </script>
+
+</body>
+
+</html>

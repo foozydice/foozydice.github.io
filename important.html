@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link href="./assets/apple-icon-180x180.png" rel="apple-touch-icon">
+  <link href="./assets/favicon.ico" rel="icon">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="/assets/js/images.js"></script>
+  <script src="/assets/js/names.js"></script>
+
+
+  <title>wheeeeee</title>
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+  <script type="importmap">
+{
+  "imports": {
+    "animejs": "/node_modules/animejs/dist/modules/index.js",
+    "animejs/animation": "/node_modules/animejs/dist/modules/animation/index.js",
+    "animejs/timer": "/node_modules/animejs/dist/modules/timer/index.js",
+    "animejs/timeline": "/node_modules/animejs/dist/modules/timeline/index.js",
+    "animejs/animatable": "/node_modules/animejs/dist/modules/animatable/index.js",
+    "animejs/draggable": "/node_modules/animejs/dist/modules/draggable/index.js",
+    "animejs/scope": "/node_modules/animejs/dist/modules/scope/index.js",
+    "animejs/engine": "/node_modules/animejs/dist/modules/engine/index.js",
+    "animejs/events": "/node_modules/animejs/dist/modules/events/index.js",
+    "animejs/easings": "/node_modules/animejs/dist/modules/easings/index.js",
+    "animejs/utils": "/node_modules/animejs/dist/modules/utils/index.js",
+    "animejs/svg": "/node_modules/animejs/dist/modules/svg/index.js",
+    "animejs/text": "/node_modules/animejs/dist/modules/text/index.js",
+    "animejs/waapi": "/node_modules/animejs/dist/modules/waapi/index.js"
+  }
+}
+</script>
+
+  <style>
+    .logo.js {
+      width: 150%;
+      height: 150%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- BEGIN HEADER (repeated on every page, must include jQuery & bootstrap to work) -->
+  <header class="">
+    <div class="navbar navbar-header navbar-default visible-xs">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="./index.html" class="navbar-brand">fuzzy dice</a>
+    </div>
+    <nav class="navbar navbar-inverse visible-xs">
+      <div class="collapse navbar-collapse" id="myNavbar" style="background-color: #f46cc4;">
+        <ul class="nav navbar-nav" style="padding: 0 5%;">
+          <li><a href="/" title="">
+              <font face="PT Sans" size="+0.8" style="color: white;">home</font>
+            </a></li>
+          <li><a href="./fuzzyfamily.html" title="">
+              <font face="PT Sans" size="+0.8" style="color: white">the fuzzy family</font>
+            </a></li>
+          <li><a href="./ourcreationmyth.html" title="">
+              <font face="PT Sans" size="+0.8" style="color: white;">our creation myth</font>
+            </a></li>
+          <li><a href="./shows.html" title="">
+              <font face="PT Sans" size="+0.8" style="color: white;">shows</font>
+            </a></li>
+          <li><a href="./auditions.html" title="">
+              <font face="PT Sans" size="+0.8" style="color: white;">auditions</font>
+            </a></li>
+          <li><a href="./important.html" title="">
+              <font face="PT Sans" size="+0.8" style="color: rgb(252, 224, 239);">&rarr; improv simulator  &larr;</font>
+            </a></li>
+        </ul>
+
+      </div>
+      <!-- </div> -->
+    </nav>
+
+    <nav class="sidebar hidden-xs">
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <div class="site-header hidden-xs">
+          <a class="site-brand" href="./index.html" title="">
+            <img class="img-responsive site-logo" alt="" src="./assets/images/FuzzyDiceLogo2.png">
+            <font size="+3.9">
+              <center>fuzzy dice
+            </font>
+          </a>
+          <p>roll with us!</p>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav">
+            <li><a href="./index.html" title="">
+                <font face="PT Sans" size="+0.8">home</font>
+              </a></li>
+            <li><a href="./fuzzyfamily.html" title="">
+                <font face="PT Sans" size="+0.8">the fuzzy family</font>
+              </a></li>
+            <li><a href="./ourcreationmyth.html" title="">
+                <font face="PT Sans" size="+0.8">our creation myth</font>
+              </a></li>
+            <li><a href="./shows.html" title="">
+                <font face="PT Sans" size="+0.8">shows</font>
+              </a></li>
+            <li><a href="./auditions.html" title="">
+                <font face="PT Sans" size="+0.8">auditions</font>
+              </a></li>
+<li><a href="./important.html" title="">
+                <font face="PT Sans" size="+0.8">improv simulator</font>
+              </a></li>
+            <li><a href="/secret/" title="">
+                <font face="PT Sans" size="+0.8">(secret) fuzzy game</font>
+              </a></li>
+
+
+          </ul>
+
+          <!-- footer + social buttons -->
+          <nav class="nav-footer hidden-xs">
+            <p class="nav-footer-social-buttons">
+              <a class="fa-icon" href="https://www.facebook.com/FuzzyDiceImprov/" title="">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a class="fa-icon" href="mailto:chloeds@princeton.edu" title="">
+                <i class="fa fa-envelope-o"></i>
+              </a>
+              <a class="fa-icon" href="https://www.youtube.com/channel/UCBOqNjECXxtZ2rY9BPJEZLw" title="">
+                <i class="fa fa-youtube-play"></i>
+              </a>
+              <a class="fa-icon" href="https://www.instagram.com/foozydice/" title="">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </p>
+            <p>© fuzzy dice
+              <script>document.write((new Date()).getFullYear())</script>
+            </p>
+          </nav>
+        </div>
+    </nav>
+  </header>
+  <!-- END HEADER (repeated on every page) -->
+
+  <main class="" id="main-content" style="min-width: 95%; margin: 0 auto; font-family: sans-serif;">
+
+    <div>
+      <h1 style="text-align: center;">Fuzzy Dice Improv Simulator!</h1>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 20px; align-items: center;">
+        <div id="dice1" class="draggy"></div>
+        <div>
+          <div id="chooseTopic">
+            Enter a topic (any noun): <input type="text" id="topicInp">
+            <div id="suggestions"></div>
+          </div>
+          <div id="dialog" hidden></div>
+        </div>
+        <div id="dice2" class="draggy"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navActivePage();
+    });
+  </script>
+
+  <script type="module">
+    import { animate, utils, createDraggable, spring } from 'animejs';
+
+    // Make the logo draggable around its center
+    createDraggable('#dice1', {
+      container: [0, 0, 0, 0],
+      releaseEase: spring({ bounce: .7 })
+    });
+
+    createDraggable('#dice2', {
+      container: [0, 0, 0, 0],
+      releaseEase: spring({ bounce: .7 })
+    });
+
+    animate("#dice1", {
+      // Property keyframes
+      y: [
+        { to: '-2.75rem', ease: 'outExpo', duration: 600 },
+        { to: 0, ease: 'outBounce', duration: 800, delay: 100 }
+      ],
+      // Property specific parameters
+      rotate: {
+        from: '-1turn',
+        delay: 0
+      },
+      ease: 'inOutCirc',
+      loopDelay: 10000,
+      loop: true
+    });
+
+    animate("#dice2", {
+      // Property keyframes
+      y: [
+        { to: '2.75rem', ease: 'outExpo', duration: 600 },
+        { to: 0, ease: 'outBounce', duration: 800, delay: 100 }
+      ],
+      // Property specific parameters
+      rotate: {
+        from: '1turn',
+        delay: 0
+      },
+      ease: 'inOutCirc',
+      loopDelay: 7000,
+      loop: true
+    });
+
+  </script>
+
+  <script>
+    const improvers = [
+      {
+        name: "Max Stanford",
+        img: "/secret/assets/maxstanford.png",
+      },
+      {
+        name: "Jon Pizza",
+        img: "/secret/assets/pizza.png",
+      },
+      {
+        name: "Elijah Patterson",
+        img: "/secret/assets/elijah.png",
+      },
+      {
+        name: "Shivani Sahu",
+        img: "/secret/assets/shivani.png",
+      },
+      {
+        name: "Dane Utley",
+        img: "/secret/assets/dane.png",
+      },
+      {
+        name: "Tyler Wilson",
+        img: "/secret/assets/tyler.png",
+      },
+      {
+        name: "Connor Roeser",
+        img: "/assets/images/headshots/fuzzyConnor.jpg",
+      },
+      {
+        name: "Max Marcus",
+        img: "/secret/assets/maxmarcus.png",
+      },
+      {
+        name: "Eva Meraw",
+        img: "/secret/assets/eva.png",
+      },
+      {
+        name: "Nina Obidairo-Danielsen",
+        img: "/secret/assets/nina.png",
+      },
+    ];
+
+    let activeDice1, activeDice2;
+
+    function getSuggestedWords(input) {
+      let suggestions = [];
+      for (let i = 0; i < IMGS.length; i++) {
+        if (suggestions.length > 10) {
+          break;
+        } 
+        if (IMGS[i].topic.startsWith(input)) {
+          suggestions.push(IMGS[i].topic);
+        }
+      }
+
+      for (let i = 0; i < IMGS.length; i++) {
+        if (suggestions.length > 10) {
+          break;
+        } 
+        if (!IMGS[i].topic.startsWith(input) && IMGS[i].topic.includes(input)) {  
+          suggestions.push(IMGS[i].topic);
+        }
+      }
+
+      return suggestions;
+    }
+
+    function generateRandomName() {
+      return FIRST_NAMES[Math.floor(Math.random() * FIRST_NAMES.length)];
+    }
+
+    function generateDialog(dice1, dice2, topic) {
+      let dice1Alias = generateRandomName();
+      let dice2Alias = generateRandomName();
+      return [
+        {
+          op: "add_message",
+          from: 1,
+          text: `Hi, I'm ${dice1.name}`
+        },
+        {
+          op: "add_message",
+          from: 2,
+          text: `and I'm ${dice2.name}! We are now going to do an improv scene about ${topic}!`
+        },
+        {
+          op: "clear",
+        },
+        {
+          op: "add_message",
+          from: 1,
+          text: `Ugh, ${dice2Alias}, you are always nagging me about ${topic}!`
+        },
+        {
+          op: "add_message",
+          from: 2,
+          text: `Oh, don't give me that, ${dice1Alias}! When you married me I put it in my wedding vows that ${topic}.`,
+        },
+        {
+          op: "add_message",
+          from: 1,
+          text: `${dice2Alias}, oh my god, that wedding WAS the most ${topic} day of my life.`,
+        },
+        {
+          op: "add_message",
+          from: 2,
+          text: `I know, ${dice1Alias}. Let me pull up a picture of ${topic} from our wedding.`,
+        },
+        {
+          op: "add_image",
+          from: 2,
+          topic: topic,
+        },
+        {
+          op: "add_message",
+          from: 1,
+          text: `Wowee, ${dice2Alias}! I haven't seen that picture in ${topic} years.`,
+        },
+        {
+          op: "add_message",
+          from: 1,
+          text: `Hmmm, ${dice2Alias}... that picture is actually more ${topic} than I remembered.`,
+        },
+        {
+          op: "add_message",
+          from: 2,
+          text: `Yes, ${dice1Alias}, ${topic} does seem awfully ${topic} right now...`,
+        },
+        {
+          op: "add_message",
+          from: 1,
+          text: `Oh, ${dice2Alias}, since ${topic} ${topic} that means that ${topic} was ${topic}.`,
+        },
+        {
+          op: "add_message",
+          from: 2,
+          text: `${topic}. I see. ${topic} ${topic} ${dice1Alias} ${topic}, ${topic}...`,
+        },
+        {
+          op: "add_message",
+          from: 1,
+          text: `${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${dice2Alias}`,
+        },
+        {
+          op: "add_message",
+          from: 2,
+          text: `${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic} ${topic}`,
+        },
+        {
+          op: "finish",
+        }
+      ];
+    }
+
+    function findImg(topic) {
+      for (let i = 0; i < IMGS.length; i++) {
+        if (IMGS[i].topic == topic) {
+          return IMGS[i].url;
+        }
+      }
+    }
+
+    function dialogToHtml(dialog) {
+      let borderRadius = dialog.from == 1 ? "10px 10px 10px 0px" : "10px 10px 0px 10px";
+      let bgColor = dialog.from == 1 ? "white" : "blue";
+      let fgColor = dialog.from == 1 ? "black" : "white";
+      let margin = dialog.from == 1 ? "margin-right: 10%;" : "margin-left: 10%;";
+      if (dialog.op == "add_message") {
+        return `<div style="background-color: ${bgColor}; padding: 20px; width: 90%; border-radius: ${borderRadius}; color: ${fgColor}; margin-bottom: 10px; ${margin}">${dialog.text}</div>`;
+      } else if (dialog.op == "add_image") {
+        let imgUrl = findImg(dialog.topic);
+        return `<div style="background-color: ${bgColor}; padding: 20px; width: 100%; border-radius: ${borderRadius}; color: ${fgColor}; margin-bottom: 10px; ${margin}">
+                  <img src="${imgUrl}" style="width: 100%;">
+                </div>`;
+      }
+    }
+
+    function processDialogBit(dialog) {
+      if (dialog.op == "clear") {
+        document.getElementById("dialog").innerHTML = "";
+      } else if (dialog.op == "finish") {
+        document.getElementById("dialog").innerHTML += `<b>END SCENE!!! (aka queue laugh track)</b><button onclick="init()">Re-roll the dice!</button>`;
+      } else {
+        document.getElementById("dialog").innerHTML += dialogToHtml(dialog);
+      } 
+    }
+
+    function startImprov(topic) {
+      console.log(topic);
+      chooseTopic.hidden = true;
+      document.getElementById("dialog").hidden = false;
+      let dialog = generateDialog(activeDice1, activeDice2, topic);
+      for (let i = 0; i < dialog.length; i++) {
+        setTimeout(() => {
+          processDialogBit(dialog[i]);
+        }, i * 3000);
+      }
+    }
+    
+    function updateSuggestionHTML(suggestions) {
+      console.log(suggestions);
+      if (suggestions == undefined) {
+        document.getElementById("suggestions").innerHTML = "";
+        return;
+      }
+      if (suggestions.length == 0) {
+        document.getElementById("suggestions").innerHTML = `<b style="color: red;">No matches found</b>`;
+        return;
+      }
+      let htmlStr = "";
+      for (let i = 0; i < suggestions.length; i++) {
+        htmlStr += `<button onclick="startImprov('${suggestions[i]}')">${suggestions[i]}</button>`;
+      }
+      document.getElementById("suggestions").innerHTML = htmlStr;
+    }
+
+    function constructImproverHTML(improver) {
+      return `
+        <div style="width: 100%;">
+          <div style="width: 50%; margin: 0 auto;">
+            <img src="${improver.img}" style="width: 100%;">
+          </div>
+          <div style="text-align: center; width: 100%;">
+            <b>${improver.name}</b>
+          </div>
+        </div>
+      `;
+    }
+
+    function init() {
+      let numProvers = improvers.length;
+      let idx1 = Math.floor(Math.random() * numProvers);
+      let idx2 = Math.floor(Math.random() * numProvers);
+      while (idx2 == idx1) {
+        idx2 = Math.floor(Math.random() * numProvers);
+      } 
+      activeDice1 = improvers[idx1];
+      activeDice2 = improvers[idx2];
+      document.getElementById("dice1").innerHTML = constructImproverHTML(activeDice1);
+      document.getElementById("dice2").innerHTML = constructImproverHTML(activeDice2);
+      chooseTopic.hidden = false;
+      topicInp.value = "";
+      document.getElementById("dialog").hidden = true;
+      document.getElementById("dialog").innerHTML = "";
+    }
+
+    window.onload = () => {
+      init();
+
+      document.getElementById("topicInp").oninput = () => {
+        topicInp.value = topicInp.value.toLowerCase();
+        if (topicInp.value != "") {
+          updateSuggestionHTML(getSuggestedWords(topicInp.value));
+        } else {
+          updateSuggestionHTML(undefined);
+        }
+      };
+    }
+  </script>
+</body>
+
+</html>
